@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  overflow-x: hidden;
+}
+
+.logo {
+  display: flex;
+  font-size: 2.3rem;
+  font-weight: 900;
+  align-items: center;
+}
+
+.logo img {
+  border-radius: 30px;
+  margin-right: 20px;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/wall.jpg);
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+}
+
+.nav-links {
+  display: flex;
+}
+.nav-links li {
+  display: inline-block;
+  list-style: none;
+
+  padding: 10px 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: 900;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  transition: background 1s;
+}
+
+nav:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav:hover .main-head {
+  text-decoration: underline;
+}
+nav:hover ul li a {
+  text-decoration: underline;
+}
+
+.main {
+  background-image: url("images/towel.jpg");
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 2px 20px #888, 0px -2px 40px #888;
+}
+
+.content h1 {
+  padding-left: 10%;
+  padding-top: 6%;
+  font-size: 4rem;
+}
+
+.content p {
+  padding-left: 11%;
+  width: 70%;
+  font-size: 1.5rem;
+}
+
+.slide-left {
+  animation: slideleft 2s linear forwards;
+}
+
+@keyframes slideleft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+p.slide-left {
+  animation-delay: 2s;
+  opacity: 0;
+}
