@@ -11,7 +11,7 @@
 
 .logo {
   display: flex;
-  font-size: 2.3rem;
+  font-size: 3rem;
   font-weight: 900;
   align-items: center;
 }
@@ -60,7 +60,7 @@ nav:hover {
 }
 
 nav:hover .main-head {
-  text-decoration: underline;
+  text-decoration: underline 1px;
 }
 nav:hover ul li a {
   text-decoration: underline;
@@ -121,6 +121,7 @@ p.slide-left {
 
 .products {
   margin: 50px 100px;
+  cursor: pointer;
 }
 .products p {
   background-color: black;
@@ -195,19 +196,69 @@ p.slide-left {
 .description-img {
   width: 100px;
   height: auto;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .item3 {
   border: 2px solid;
   background-color: rgba(255, 255, 255, 0.7);
   margin: 50px;
-  width: 500px;
+  width: 400px;
   height: 300px;
   align-items: center;
   border-radius: 40px;
 }
 
+.item3:hover .reach-address {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background 1s;
+  border-radius: 30px;
+}
+
 .item3 h2 {
   margin: 30px 20px;
+}
+
+.form {
+  display: list-item;
+}
+
+.form-unit {
+  text-align: center;
+}
+
+.form-head {
+  margin: 30px 0 50px 0;
+  text-decoration: underline 1px;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0);
+  width: 500px;
+  height: auto;
+  padding: 30px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+button {
+  background-color: black;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: 1px solid white;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+.whatsapp {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 100%;
+  z-index: 2;
+  bottom: 20px;
+  right: 30px;
 }
