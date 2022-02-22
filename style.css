@@ -14,16 +14,23 @@
   font-size: 3rem;
   font-weight: 900;
   align-items: center;
+  padding: 10px;
 }
 
 .logo img {
   border-radius: 30px;
   margin-right: 20px;
 }
+.logo img:hover {
+  transform: rotate(359deg);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 .header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/wall.jpg);
+  background-image: url(images/towel.jpg);
   background-color: rgba(0, 0, 0, 0.8);
   background-blend-mode: multiply;
   background-position: center;
@@ -67,10 +74,10 @@ nav:hover ul li a {
 }
 
 .main {
-  background-image: url("images/towel.jpg");
+  background-image: url("images/wall.jpg");
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.8);
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
@@ -95,7 +102,7 @@ nav:hover ul li a {
 
 @keyframes slideleft {
   0% {
-    transform: translateX(100px);
+    transform: translateX(200px);
     opacity: 0;
   }
   100% {
@@ -205,15 +212,17 @@ p.slide-left {
   background-color: rgba(255, 255, 255, 0.7);
   margin: 50px;
   width: 400px;
-  height: 300px;
+  height: 260px;
   align-items: center;
   border-radius: 40px;
 }
 
 .item3:hover .reach-address {
   background-color: rgba(0, 0, 0, 0.1);
-  transition: background 1s;
+  transition: 4s;
   border-radius: 30px;
+  font-weight: 900;
+  text-decoration: underline;
 }
 
 .item3 h2 {
