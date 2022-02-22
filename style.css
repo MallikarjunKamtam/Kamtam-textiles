@@ -28,6 +28,7 @@
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .nav-links {
@@ -68,7 +69,7 @@ nav:hover ul li a {
 .main {
   background-image: url("images/towel.jpg");
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: multiply;
   background-position: center;
@@ -106,4 +107,107 @@ nav:hover ul li a {
 p.slide-left {
   animation-delay: 2s;
   opacity: 0;
+}
+
+.products img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.products:hover {
+  transform: scale(1.01);
+}
+
+.products {
+  margin: 50px 100px;
+}
+.products p {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  line-height: 3;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.products-row {
+  text-align: center;
+  display: inline-block;
+}
+
+.products-row h1 {
+  text-align: center;
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 30px;
+  border-radius: 10px;
+  border: 2px solid white;
+  width: 300px;
+}
+
+.product-img {
+  display: flex;
+  margin-left: 100px;
+}
+
+.bottom {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 50px;
+}
+
+.bottom p {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0 30px;
+  text-decoration: underline;
+  color: black;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.reach-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.reach-item h2 {
+  margin: 50px 100px;
+  color: black;
+}
+.reach {
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.description-img {
+  width: 100px;
+  height: auto;
+  margin-top: 50px;
+}
+
+.item3 {
+  border: 2px solid;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 50px;
+  width: 500px;
+  height: 300px;
+  align-items: center;
+  border-radius: 40px;
+}
+
+.item3 h2 {
+  margin: 30px 20px;
 }
